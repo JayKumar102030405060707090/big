@@ -1,0 +1,24 @@
+{
+  "name": "Big Small Bot",
+  "description": "A Telegram bot for posting Big, Small, Red, Green messages.",
+  "repository": "https://github.com/JayKumar102030405060707090/big",
+  "keywords": ["telegram", "bot", "python"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram bot token",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": []
+}
