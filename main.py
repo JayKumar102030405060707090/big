@@ -1,5 +1,8 @@
-import logging from pyrogram import Client, filters from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery from pymongo import MongoClient from time import sleep
-
+import logging
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pymongo import MongoClient
+from time import sleep
 MongoDB Client Setup
 
 client = MongoClient("mongodb+srv://jaydipmore74:xCpTm5OPAfRKYnif@cluster0.5jo18.mongodb.net/?retryWrites=true&w=majority") db = client['telegram_bot_db'] users_collection = db['users']
