@@ -1,24 +1,29 @@
 {
-  "name": "Big Small Bot",
-  "description": "A Telegram bot for posting Big, Small, Red, Green messages.",
+  "name": "ForceSubscribeTelegramBot",
+  "description": "A Telegram bot with force subscribe, 91 Club, prediction & agent hiring system.",
   "repository": "https://github.com/JayKumar102030405060707090/big",
-  "keywords": ["telegram", "bot", "python"],
+  "keywords": ["telegram", "bot", "force subscribe", "pyrogram", "mongodb"],
   "env": {
+    "API_ID": {
+      "description": "Get this from https://my.telegram.org",
+      "value": "28609964"
+    },
+    "API_HASH": {
+      "description": "Get this from https://my.telegram.org",
+      "value": "3236bdf1e11a0fb8091495e083857621"
+    },
     "BOT_TOKEN": {
-      "description": "Your Telegram bot token",
-      "required": true
+      "description": "Your bot token from BotFather",
+      "value": "7614916680:AAEVOATGqMzDOfIpDCJ36_1K_7ONnt2vXis"
+    },
+    "MONGO_URI": {
+      "description": "Your MongoDB URI",
+      "value": "mongodb+srv://jaydipmore74:xCpTm5OPAfRKYnif@cluster0.5jo18.mongodb.net/?retryWrites=true&w=majority"
     }
   },
   "buildpacks": [
     {
       "url": "heroku/python"
     }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-  "addons": []
+  ]
 }
