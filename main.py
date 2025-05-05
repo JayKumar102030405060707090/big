@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 # MongoDB setup
 client = MongoClient(config.MONGODB_URI)
-db = client.get_database()
+db = client["vote_bot"]
 vote_collection = db[config.VOTE_COLLECTION]
 
 # /start command
