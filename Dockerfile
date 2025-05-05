@@ -1,9 +1,11 @@
-FROM python:3.11
+FROM python:3.9-slim
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY . /app
+COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "main.py"]
+EXPOSE 5000
+
+CMD ["python", "./main.py"]
