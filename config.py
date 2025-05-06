@@ -6,4 +6,4 @@ class Config:
     UPDATE_CHANNEL = "KOMALMUSICUPDATE"  # Channel users must join to use bot
     SUPPORT_GROUP = "BestFriendsChattingZone"
     BOT_OWNER = 7168729089
-    LOG_CHANNEL = -1001234567890  # Replace with your log channel ID
+    LOG_CHANNEL = -1002387668895  # Replace with your log channel ID
