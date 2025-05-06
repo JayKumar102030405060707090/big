@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from config import Config
-from core.database import Database
+from VOTE.core.database import Database
 import datetime
 
 db = Database()
