@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 from config import Config
-from core.database import Database
+from VOTE.core.database import Database
 import logging
 import datetime
 
