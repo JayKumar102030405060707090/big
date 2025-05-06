@@ -1,3 +1,4 @@
-pyrogram
-pymongo
-python-dotenv
+pyrogram>=2.0.0
+pymongo>=4.0.0
+python-dotenv>=0.19.0
+loguru>=0.6.0
