@@ -1,1 +1,1 @@
-worker: python -m VOTE
+worker: python main.py
