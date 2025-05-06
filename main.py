@@ -1,4 +1,5 @@
-from VOTE import start_bot
+from VOTE.bot import VoteBot
 
 if __name__ == "__main__":
-    start_bot()
+    bot = VoteBot()
+    bot.run()
