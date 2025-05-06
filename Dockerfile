@@ -1,11 +1,10 @@
 FROM python:3.9-slim
 
-WORKDIR /usr/src/app
-
+WORKDIR /app
 COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 5000
+ENV PYTHONPATH=/app
 
-CMD ["python", "./main.py"]
+CMD ["python", "-m", "VOTE"]
