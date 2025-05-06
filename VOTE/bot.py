@@ -56,7 +56,7 @@ class VoteBot:
                 await message.stop_propagation()
 
     def _register_handlers(self):
-        from plugins import start, vote
+        from VOTE.plugins import start, vote
         
         # Command handlers
         self.app.on_message(filters.command("start") & filters.private)(start.handle_start)
