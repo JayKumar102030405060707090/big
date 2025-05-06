@@ -5,6 +5,4 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENV PYTHONPATH=/app
-
-CMD ["python", "-m", "VOTE"]
+CMD ["python", "main.py"]
